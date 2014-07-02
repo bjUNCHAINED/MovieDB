@@ -1,0 +1,29 @@
+<!--Byunghyun Jeon || byunghyun.jeon@gmail.com || July 2014-->
+<!--search.html: Advanced search menu. From here, users can search for movies in any combination of movie title, year, director, and featured stars.-->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+  <TITLE>Fabflix Search Page</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FDF5E6">
+<H1 ALIGN="CENTER">Fabflix: Search</H1>
+<center>
+<a href="/Fabflix/main.html">Back to Browse</a> | <a href="/Fabflix/servlet/Cart">My Cart</a><br>
+<FORM ACTION="/Fabflix/servlet/Search"
+      METHOD="GET">
+  <input type="hidden" name="type" value="search">
+  Title: <INPUT TYPE="TEXT" NAME="title"><BR>
+  Year: <INPUT TYPE="TEXT" NAME="year"><BR>
+  Director: <INPUT TYPE="TEXT" NAME="director"><BR>
+  Star's First Name: <INPUT TYPE="TEXT" NAME="firstName"><BR>
+  Star's Last Name: <input type="text" name="lastName"><BR>
+  <input type="hidden" name="sortBy" value="tAsc">
+  
+  <INPUT TYPE="SUBMIT" VALUE="Search">
+</FORM>
+
+</center>
+</BODY>
+</HTML>
